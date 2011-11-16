@@ -15,12 +15,11 @@
 # Use the non-open-source part, if present
 -include vendor/htc/pyramid/BoardConfigVendor.mk
 
-# Use the part that is common between all pyramids
-#include device/htc/pyramid/BoardConfig.mk
+USE_CAMERA_STUB := true
 
 TARGET_BOOTLOADER_BOARD_NAME := pyramid
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := msm8260
+TARGET_BOARD_PLATFORM := msm8660
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
